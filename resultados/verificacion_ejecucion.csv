@@ -1,0 +1,6 @@
+control,estado
+Dos regresores y cuatro clasificadores,OK
+Cinco folds por tarea,OK
+Sin solapamiento de partidas train/test,OK
+Predicciones finales completas y finitas,OK
+Conclusiones y resumen exportados,OK

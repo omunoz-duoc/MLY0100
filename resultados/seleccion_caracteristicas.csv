@@ -1,0 +1,9 @@
+variable,tarea,justificación,tratamiento
+Map,Ambas,Categoría nominal; posible contexto de interacciones,One-Hot
+Team,Regresión,Lado conocido al inicio de ronda,One-Hot
+RoundId,Regresión,"Posición de la ronda, disponible al inicio",Numérica
+Equipamiento inicial,Ambas,Condición económica disponible en el corte,Escalar si corresponde
+T_First2Wins / CT_First2Wins,Clasificación,Rendimiento observado antes del corte,Conteos
+MatchId / InternalTeamId / SteamId,Ambas,Solo trazabilidad/agrupación,Excluir de X
+ScaledTimeAlive y estadísticas posteriores,Ambas,Fuga de información,Excluir de X
+OpeningRoundsWon,Clasificación,Combinación determinista de dos predictores,Solo descriptivo

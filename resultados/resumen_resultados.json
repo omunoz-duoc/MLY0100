@@ -1,0 +1,105 @@
+{
+  "regresion": {
+    "modelo": "Árbol regresión",
+    "variante": "reducido",
+    "features": [
+      "Map",
+      "Team",
+      "RoundId",
+      "RoundStartingEquipmentValue"
+    ],
+    "metricas_prueba": {
+      "MAE": 26.34111054326655,
+      "RMSE": 78.64853948794838,
+      "R2": 0.006887482851444027
+    },
+    "MAE_CV": 24.35086150343434,
+    "MAE_IC95": [
+      23.020395438118587,
+      32.271576475773585
+    ],
+    "mejora_MAE_vs_mediana_pct": 3.3467559299616867,
+    "params": {
+      "ccp_alpha": 0.0,
+      "criterion": "squared_error",
+      "max_depth": 6,
+      "max_features": null,
+      "max_leaf_nodes": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 300,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "monotonic_cst": null,
+      "random_state": 42,
+      "splitter": "best"
+    }
+  },
+  "clasificacion": {
+    "modelo": "SVM",
+    "variante": "completo",
+    "features": [
+      "Map",
+      "T_First2Wins",
+      "CT_First2Wins",
+      "T_First2EquipMean",
+      "CT_First2EquipMean"
+    ],
+    "metricas_prueba": {
+      "F1_macro": 0.6693333333333333,
+      "Accuracy": 0.6693548387096774,
+      "Balanced_accuracy": 0.6693548387096774,
+      "Precision_1": 0.6721311475409836,
+      "Recall_1": 0.6612903225806451,
+      "F1_1": 0.6666666666666666,
+      "Especificidad": 0.6774193548387096,
+      "ROC_AUC": 0.7213839750260146,
+      "TN": 42,
+      "FP": 20,
+      "FN": 21,
+      "TP": 41
+    },
+    "F1_macro_IC95": [
+      0.5483841588812504,
+      0.7821305394676905
+    ],
+    "partidas_sin_ganador_unico_predicho": 7,
+    "params": {
+      "C": 1,
+      "break_ties": false,
+      "cache_size": 200,
+      "class_weight": null,
+      "coef0": 0.0,
+      "decision_function_shape": "ovr",
+      "degree": 3,
+      "gamma": "scale",
+      "kernel": "rbf",
+      "max_iter": -1,
+      "probability": false,
+      "random_state": 42,
+      "shrinking": true,
+      "tol": 0.001,
+      "verbose": false
+    }
+  },
+  "filas": {
+    "regresion": 79067,
+    "clasificacion": 616
+  },
+  "exclusiones_EP2": [
+    207,
+    212,
+    213,
+    229,
+    237,
+    278,
+    297,
+    314,
+    319,
+    338,
+    342,
+    482,
+    510
+  ],
+  "sha256_csv": "678bda701515bd4d0c07f623924f0e878000065f3a050cdd8282c450caae1569",
+  "seed": 42
+}
